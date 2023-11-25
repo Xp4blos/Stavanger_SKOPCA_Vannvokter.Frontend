@@ -1,0 +1,16 @@
+header.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #157A6E;
+    .header__left{
+        h1{
+            font-family: 'Koulen', sans-serif;
+            color: white;
+            padding: 5px;
+        }
+    }
+    .header__right{
+        width: auto;
+    }
+}

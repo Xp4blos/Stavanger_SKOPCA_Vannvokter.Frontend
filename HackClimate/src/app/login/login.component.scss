@@ -1,0 +1,142 @@
+
+div.login-wrapper{
+    font-family: 'Inter', sans-serif;
+    width: 100vw;
+   
+    .login{
+        background: rgb(66,158,147);
+        background: linear-gradient(0deg, rgba(66,158,147,1) 0%, rgba(163,232,224,1) 100%);
+        width: 100%;
+        padding: 25px;
+        .login__logo{
+            text-align: center;
+            img{
+                width: 200px;
+                margin: 20px 0;
+            }
+            .login__logo__title{
+                text-transform: capitalize;
+                color: white;
+                font-family: 'Koulen';
+                padding: 10px;
+                letter-spacing: 5px;
+
+            }
+        }
+        .login__form{
+            width: 70%; // form fields width
+            margin: 0 auto;
+            form{
+               width: 100%;
+                .form-field{
+                    margin: 50px auto;
+                    position: relative;
+                    .form-field__img{
+                        position: absolute;
+                        left: -10px;
+                        bottom: -25%;
+                        z-index: 1;
+                        padding: 10px;
+                        border-radius: 50%;
+                        background-color: white;
+                        img{
+                            width: 30px;
+                            padding: 5px;
+                        }
+                    }
+                    .form-input{
+                        width: 100%;
+                        text-align: center;
+                        background-color: rgba(255, 255, 255, 0.185);
+                        border: 1px solid #429E93;
+                        border-radius: 0 20px 20px 0;
+                        padding: 5px;
+                        color: #376862;
+                    }
+                    .form-input:focus{
+                       outline: none;
+                    }
+                    button.btn-login{
+                        width: 100%;
+                        background-color: white;
+                        color:#0B2320;
+                        border-radius: 50px;
+                        font-weight: bold;
+                        transition: .3s;
+                    }
+                    button.btn-login:hover{
+                        background-color:#e3f7ff ;
+                        -webkit-box-shadow: 0px 0px 15px -5px rgba(66, 68, 90, 1);
+                        -moz-box-shadow: 0px 0px 15px -5px rgba(66, 68, 90, 1);
+                        box-shadow: 0px 0px 15px -5px rgba(66, 68, 90, 1);
+                    }
+                }
+                .form__info{
+                    text-align: center;
+                    font-size: 15px;
+                   label{
+                    color: white;
+                    a{
+                        color: #0B2320 ;
+                        font-weight: bold;
+                    }
+                   } 
+                }
+            }
+        }
+    }
+
+}
+@media (orientation: portrait){
+    div.login-wrapper{
+        .login{
+            height: 100vh;
+        }
+    }
+}
+
+
+@media  (min-width: 1024px){
+    div.login-wrapper{
+    height: 100vh;
+    background: none;
+    background-image: url(../../assets/bg/norway.jpg);
+    background-position: center;
+    background-size:cover;
+    padding: 250px;
+    .login{
+        width: 500px;
+        height: 630px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -250px;
+        margin-top: -315px;
+        padding: 30px;
+        background: rgb(66,158,147);
+        background: linear-gradient(0deg, rgba(66,158,147,1) 0%, rgba(163,232,224,1) 100%);
+        border-radius: 20px;
+
+        -webkit-box-shadow: 0px 0px 15px -5px rgba(66, 68, 90, 1);
+        -moz-box-shadow: 0px 0px 15px -5px rgba(66, 68, 90, 1);
+        box-shadow: 0px 0px 15px -5px rgba(66, 68, 90, 1);
+
+        .login__logo{
+            img{
+                width: 150px;
+            }
+        }
+       }
+   }
+   
+}
+@media  (min-width: 1280px){
+    div.login-wrapper{
+        .login{
+            width: 800px;
+            height: 650px;
+            margin-left: -400px;
+            margin-top: -325px;
+        }
+    }
+}
