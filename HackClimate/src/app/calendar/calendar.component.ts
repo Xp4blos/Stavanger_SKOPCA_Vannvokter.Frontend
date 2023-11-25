@@ -1,6 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild, ViewEncapsulation } from "@angular/core";
 import { scheduler } from "dhtmlx-scheduler";
 import { EventService } from "../services/event.service";
+import { Weather, Series, WeatherService } from "../services/WeatherService";
 
 @Component({
   selector: 'app-calendar',
@@ -10,7 +11,10 @@ import { EventService } from "../services/event.service";
 export class CalendarComponent implements OnInit {
   @ViewChild("scheduler_here", {static: true}) schedulerContainer!: ElementRef;
 
-  constructor(private eventService: EventService){}
+  precipitations!:number[]
+  temperatures!:number[]
+
+  constructor(private eventService: EventService, private weatherService: WeatherService){}
 
     ngOnInit() {
       scheduler.config.date_format = "%Y-%m-%d %H:%i";
@@ -19,5 +23,15 @@ export class CalendarComponent implements OnInit {
           .then((data) => {
                scheduler.parse(data);
           });
+    }
+
+    GetWeatherForecast()
+    {
+      this.weatherService.getWeatherForecast().subscribe(response=>{
+        console.log(response);
+        this.precipitations = this.weatherService.getPrecipitation(response.properties.timeseries)
+        this.temperatures = this.weatherService.getTemperature(response.properties.timeseries)
+      })
+      
     }
 }

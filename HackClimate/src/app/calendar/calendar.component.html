@@ -1,4 +1,13 @@
 <div class="calendar-wrapper">
+    <div>
+       <button (click)="GetWeatherForecast()">Fajny baton</button>
+       <table>
+        <li *ngFor="let item of precipitations">{{item}}</li>
+       </table>
+       <table>
+        <li *ngFor="let item of temperatures">{{item}}</li>
+       </table>
+    </div>
     <div #scheduler_here class="dhx_cal_container" style="width: 100%; height:100vh">
         <div class="dhx_cal_navline">
             <div class="dhx_cal_prev_button"></div>
@@ -12,4 +21,5 @@
         <div class="dhx_cal_header"></div>
         <div class="dhx_cal_data"></div>
      </div>
+
 </div>
