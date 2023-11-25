@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="142.95753mm"
+   height="142.95753mm"
+   viewBox="0 0 142.95753 142.95753"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="LogoVV.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.69219276"
+     inkscape:cx="429.07123"
+     inkscape:cy="561.25984"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-20.258681,-98.235509)">
+    <circle
+       style="fill:#5c59ea;fill-opacity:1;stroke-width:0.264583"
+       id="path1"
+       cx="91.73745"
+       cy="169.71428"
+       r="71.478767" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:16.9333px;font-family:arial;-inkscape-font-specification:'arial Bold';fill:#000000;fill-opacity:1;stroke-width:0.264583"
+       x="25.610039"
+       y="189.20848"
+       id="text2"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.9333px;font-family:Castellar;-inkscape-font-specification:Castellar;fill:#000000;fill-opacity:1;stroke-width:0.264583"
+         x="25.610039"
+         y="189.20848">vannvokter</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:43.4681px;font-family:Castellar;-inkscape-font-specification:Castellar;fill:#000000;fill-opacity:1;stroke-width:0.283487"
+       x="83.328476"
+       y="132.16763"
+       id="text3"
+       transform="scale(0.80357557,1.244438)"><tspan
+         sodipodi:role="line"
+         id="tspan3"
+         style="font-size:43.4681px;stroke-width:0.283487"
+         x="83.328476"
+         y="132.16763">V</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:43.4681px;font-family:Castellar;-inkscape-font-specification:Castellar;fill:#000000;fill-opacity:1;stroke-width:0.283487"
+       x="-142.62956"
+       y="-100.82712"
+       id="text3-2"
+       transform="matrix(-0.80354036,-0.00752289,0.01165014,-1.2443835,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan3-8"
+         style="font-size:43.4681px;stroke-width:0.283487"
+         x="-142.62956"
+         y="-100.82712">V</tspan></text>
+  </g>
+</svg>
