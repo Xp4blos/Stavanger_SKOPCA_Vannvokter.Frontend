@@ -1,9 +1,11 @@
 header.header{
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #157A6E;
     .header__left{
+        margin-left: 5%;
         h1{
             font-family: 'Koulen', sans-serif;
             color: white;
@@ -11,6 +13,23 @@ header.header{
         }
     }
     .header__right{
-        width: auto;
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        .header__right__profile{
+            padding: 10px;
+            margin: 0 10px;
+            img{
+                width: 40px;
+            }
+        }
+        .header__right__menu{
+            padding: 10px;
+            margin: 0 10px;
+            margin-bottom: -10px;
+            img{
+                width: 40px;
+            }
+        }
     }
 }

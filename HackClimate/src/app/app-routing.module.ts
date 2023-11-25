@@ -16,6 +16,10 @@ const routes: Routes = [
     component: LoginComponent
   },
   {
+    path: 'ctest',
+    component: CalendarComponent
+  },
+  {
     path: 'main',
     component: MainComponent,
     children:

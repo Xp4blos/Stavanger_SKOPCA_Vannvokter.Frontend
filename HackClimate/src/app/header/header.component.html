@@ -4,10 +4,10 @@
     </div>
     <div class="header__right">
         <div class="header__right__profile">
-
+            <img src="./assets/profile.png" alt="">
         </div>
         <div class="header__right__menu">
-            menu
+            <img (click)="onMenuClicked()"  src="{{isOpen ? './assets/menu/close.png' : './assets/menu/menu.png'}}">
         </div>
     </div>
 </header>

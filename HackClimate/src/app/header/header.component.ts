@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  @Output() isMenuOpen = new EventEmitter<boolean>()
 
+
+  isOpen : boolean = false
+
+
+
+  onMenuClicked(){
+    this.isOpen = !this.isOpen
+    this.isMenuOpen.emit(this.isOpen)
+  }
 }

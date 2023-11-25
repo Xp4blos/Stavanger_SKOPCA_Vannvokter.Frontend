@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent {
+isNavVisable !: boolean
+
+
+changeMenuState(isOpen:boolean){
+  console.log('menu status ',isOpen? ' -- opened --' : ' -- closed -- ');
+  this.isNavVisable = isOpen
+}
 
 }
