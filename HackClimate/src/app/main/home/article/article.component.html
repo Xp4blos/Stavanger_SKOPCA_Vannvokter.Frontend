@@ -1,0 +1,14 @@
+<div class="article">
+    <div class="article__header">
+        <h2 class="article__header__title">{{article.title}}</h2>
+        <p class="article__header__date">{{article.date | slice: 0:10}}</p>
+    </div>
+    <div class="article__content">
+        <div class="article__content__img">
+            <img src="{{article.imageUrl}}" alt="">
+        </div>
+        <div class="article__content__text">
+            <p>{{article.content}}</p>
+        </div>
+    </div>
+</div>

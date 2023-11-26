@@ -5,7 +5,9 @@
     .content{
         display: flex;
         justify-content: flex-end;
-
+        .content-main{
+            width: 100%;
+        }
     }
     
 }

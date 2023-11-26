@@ -1,0 +1,40 @@
+div.article{
+    margin-bottom: 35px;
+    width: 100%;
+    .article__header{
+        background-color:#137b6f ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        
+        .article__header__title{
+            font-family: 'Koulen',sans-serif; 
+            margin-left: 10px; 
+            padding: 3px;
+        }
+        .article__header__date{
+            font-family: 'Koulen',sans-serif;    
+            margin-right: 10px;
+            font-size: 18px;
+            padding: 5px;
+        }
+    }
+    .article__content{
+        display: flex;
+        background-color: #4faea2;
+        .article__content__img{
+            img{
+                height: 300px;
+                width: 250px;
+                object-fit:cover;
+            }
+        }
+        .article__content__text{
+            color: white;
+            padding: 15px;
+            font-family: 'Inter',sans-serif;
+        }
+      
+    }
+}

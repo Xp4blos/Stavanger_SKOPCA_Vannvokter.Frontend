@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import { NavComponent } from './nav/nav.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MapComponent } from './map/map.component';
+import { ArticleComponent } from './main/home/article/article.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MapComponent } from './map/map.component';
     HomeComponent,
     HeaderComponent,
     NavComponent,
-    MapComponent
+    MapComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,
