@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { MainComponent } from './main/main.component';
 import { HomeComponent } from './main/home/home.component';
+import { MapComponent } from './map/map.component';
 
 const routes: Routes = [
   { // default route
@@ -30,6 +31,10 @@ const routes: Routes = [
       {
         path: 'home',
         component: HomeComponent
+      },
+      {
+        path: 'map',
+        component: MapComponent
       }
     ]
   }
