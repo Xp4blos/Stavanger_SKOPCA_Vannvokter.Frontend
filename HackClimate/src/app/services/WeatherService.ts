@@ -92,10 +92,10 @@ export class WeatherService {
 
       let DailyPrecipitation:number[] = []
 
-      let dupa:number = 100
-      while(precipitation.length >= 4 && dupa > 0)
+    
+      while(precipitation.length >= 4)
       {
-        dupa--
+       
         let sum:number = 0;
 
         for (let i = 0; i < 4; i++) {
@@ -119,7 +119,7 @@ export class WeatherService {
         if(element.time.slice(11,13) === '12')
         {
           const temperature = element.data.instant.details.air_temperature
-  
+          
           if( temperature === undefined)
           temperatures.push(0);
           else

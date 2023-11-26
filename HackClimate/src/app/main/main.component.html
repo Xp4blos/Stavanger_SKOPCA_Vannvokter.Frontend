@@ -1,7 +1,9 @@
 <div class="wrapper">
 <app-header (isMenuOpen)="changeMenuState($event)"></app-header>
 <section class="content">
-    <router-outlet></router-outlet>
+    <div class="content-main">
+        <router-outlet></router-outlet>
+    </div>
     <app-nav *ngIf="isNavVisable"></app-nav>
 </section>
 </div>

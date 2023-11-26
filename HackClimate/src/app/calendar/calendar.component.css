@@ -1,10 +1,10 @@
 @import '../../../node_modules/dhtmlx-scheduler/codebase/dhtmlxscheduler.css';
-:host {
-   display: block;
-   position: relative;
-   height: 100%;
-   width: 100%;
-}
+
 .calendar-wrapper{
-    padding: 50px;
+    padding:100px 50px;
+    width: auto;
+    margin: 0 auto;
+    .dhx_cal_container{
+        height: 600px;
+    }
 }
