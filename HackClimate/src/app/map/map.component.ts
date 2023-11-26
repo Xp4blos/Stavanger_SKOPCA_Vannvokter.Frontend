@@ -1,5 +1,6 @@
 import { Component, AfterViewInit } from '@angular/core';
-import L from 'leaflet';
+import { AddressService, Coordinates } from '../services/AddressService';
+import L, { Map, Marker, MarkerOptions, latLng } from 'leaflet';
 
 @Component({
   selector: 'app-map',
@@ -7,12 +8,14 @@ import L from 'leaflet';
   styleUrls: ['./map.component.scss']
 })
 export class MapComponent {
-  private map:any;
+  private map!:Map
+  
+  constructor(private addressService:AddressService) { }
 
   private initMap(): void {
     this.map = L.map('map', {
-      center: [ 39.8282, -98.5795 ],
-      zoom: 3
+      center: [ 58.974796, 5.631312 ],
+      zoom: 14
     });
 
     const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -26,5 +29,18 @@ export class MapComponent {
 
   ngAfterViewInit(): void {
     this.initMap();
+
+    const address = 'Øygardsveien 35, 4047 Hafrsfjord, Norway'
+
+    this.addressService.getPlaces(address).subscribe(response=>{
+      console.log(response);
+      const coordinates = this.addressService.getCoordinate(response)
+
+      var marker = L.marker([coordinates.latitude, coordinates.longitude])
+
+      marker.bindPopup(address).openPopup()
+
+      marker.addTo(this.map);
+    })
   }
 }
