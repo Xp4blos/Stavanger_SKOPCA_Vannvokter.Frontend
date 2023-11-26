@@ -24,19 +24,27 @@ const routes: Routes = [
     component: MainComponent,
     children:
     [
+      {
+        path: '',
+        redirectTo:'home',
+        pathMatch:'full'
+      },
       {path: 'calendar',
       component:  CalendarComponent
       },
       {
         path: 'home',
         component: HomeComponent
-      }
+      },
+      
     ]
-  }
+  },
+  
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,   { onSameUrlNavigation: "reload" })],
+  
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

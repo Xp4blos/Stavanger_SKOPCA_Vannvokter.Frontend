@@ -1,1 +1,23 @@
-<p>home works!</p>
+<div class="home-wrapper">
+    <div class="filters">
+        <h3>Filters</h3>
+        <ul>
+            <li><input type="checkbox" checked name="">All</li>
+            <li><input type="checkbox" name="">Events</li>
+            <li><input type="checkbox" name="">Law Changes</li>
+            <li><input type="checkbox" name="">Weather Conditions</li>
+            <li><input type="checkbox" name="">Grants</li>
+        </ul>
+        <div class="date">
+            <p>Date</p>
+            <label>From:</label>
+            <input class="form-control" type="date" name="" id="">
+            <p></p>
+            <label>To:</label>
+            <input class="form-control" type="date" name="" id="">
+        </div>
+    </div>
+    <div class="home-content" id="style-1">
+        <app-article *ngFor="let article of articles" [article]="article"></app-article>
+    </div>
+</div>
